@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل فعاليات الجامعة الافتراضية</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شريط التنقل Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-calendar-event"></i>
+                دليل فعاليات الجامعة
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="event.html">تفاصيل الفعالية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم البطل Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>دليل فعاليات الجامعة الافتراضية السورية</h1>
+            <p class="lead">اكتشف أحدث الفعاليات الثقافية والرياضية والموسيقية والعائلية</p>
+            <a href="events.html" class="btn btn-light btn-lg mt-3">
+                <i class="bi bi-search"></i> تصفح الفعاليات
+            </a>
+        </div>
+    </section>
+
+    <!-- المحتوى الرئيسي Main -->
+    <main>
+        <!-- قسم 1: فعاليات بارزة - سلايدر -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center d-block">فعاليات بارزة هذا الأسبوع</h2>
+                <div id="featuredCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="assets/img/event1.webp" class="d-block w-100" alt="مهرجان الثقافة الرقمية">
+                            <div class="carousel-caption">
+                                <h5>مهرجان الثقافة الرقمية</h5>
+                                <p>فعالية ثقافية تجمع المبدعين من مختلف التخصصات</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/event2.jpg" class="d-block w-100" alt="يوم الرياضة الجامعي">
+                            <div class="carousel-caption">
+                                <h5>يوم الرياضة الجامعي</h5>
+                                <p>مسابقات رياضية متنوعة لجميع الطلاب</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/event5.jpg" class="d-block w-100" alt="حفل موسيقي افتراضي">
+                            <div class="carousel-caption">
+                                <h5>حفل موسيقي افتراضي</h5>
+                                <p>أمسية موسيقية مباشرة عبر الإنترنت</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم 2: التصنيفات السريعة -->
+        <section class="categories-section bg-white py-5">
+            <div class="container">
+                <h2 class="section-title text-center d-block">تصنيفات الفعاليات</h2>
+                <div class="text-center mt-4">
+                    <a href="events.html" class="category-badge badge badge-culture text-white">
+                        <i class="bi bi-book"></i> ثقافة
+                    </a>
+                    <a href="events.html" class="category-badge badge badge-sports text-white">
+                        <i class="bi bi-trophy"></i> رياضة
+                    </a>
+                    <a href="events.html" class="category-badge badge badge-music text-white">
+                        <i class="bi bi-music-note-beamed"></i> موسيقى
+                    </a>
+                    <a href="events.html" class="category-badge badge badge-family text-white">
+                        <i class="bi bi-people"></i> عائلي
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم 3: أحدث الفعاليات -->
+        <section class="latest-events py-5">
+            <div class="container">
+                <h2 class="section-title text-center d-block">أحدث الفعاليات</h2>
+                <div class="row g-4 mt-3">
+                    <!-- فعالية 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="assets/img/event3.png" class="card-img-top" alt="ندوة التعليم الإلكتروني">
+                            <div class="card-body">
+                                <span class="badge badge-culture mb-2">ثقافة</span>
+                                <h5 class="card-title">ندوة التعليم الإلكتروني</h5>
+                                <p class="card-text">ندوة تناقش مستقبل التعليم الإلكتروني وأحدث التقنيات المستخدمة في الجامعات الافتراضية.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted"><i class="bi bi-calendar3"></i> 2026-05-15</small>
+                                    <a href="event.html" class="btn btn-sm btn-outline-primary">التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- فعالية 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="assets/img/event6.jpg" class="card-img-top" alt="بطولة الشطرنج">
+                            <div class="card-body">
+                                <span class="badge badge-sports mb-2">رياضة</span>
+                                <h5 class="card-title">بطولة الشطرنج الافتراضية</h5>
+                                <p class="card-text">بطولة شطرنج أونلاين مفتوحة لجميع طلاب الجامعة مع جوائز قيمة للفائزين.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted"><i class="bi bi-calendar3"></i> 2026-05-20</small>
+                                    <a href="event.html" class="btn btn-sm btn-outline-primary">التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- فعالية 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="assets/img/event7.jpg" class="card-img-top" alt="أمسية موسيقية">
+                            <div class="card-body">
+                                <span class="badge badge-music mb-2">موسيقى</span>
+                                <h5 class="card-title">أمسية موسيقية شرقية</h5>
+                                <p class="card-text">حفل موسيقي يضم فرقة من الطلاب الموهوبين يقدمون مقطوعات شرقية كلاسيكية.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted"><i class="bi bi-calendar3"></i> 2026-05-25</small>
+                                    <a href="event.html" class="btn btn-sm btn-outline-primary">التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- فعالية 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="assets/img/event4.png" class="card-img-top" alt="يوم العائلة">
+                            <div class="card-body">
+                                <span class="badge badge-family mb-2">عائلي</span>
+                                <h5 class="card-title">يوم العائلة المفتوح</h5>
+                                <p class="card-text">فعالية عائلية ممتعة تتضمن ورشات عمل وألعاب تفاعلية للأطفال والكبار.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted"><i class="bi bi-calendar3"></i> 2026-06-01</small>
+                                    <a href="event.html" class="btn btn-sm btn-outline-primary">التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- فعالية 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="assets/img/event8.png" class="card-img-top" alt="معرض المشاريع">
+                            <div class="card-body">
+                                <span class="badge badge-culture mb-2">ثقافة</span>
+                                <h5 class="card-title">معرض مشاريع التخرج</h5>
+                                <p class="card-text">عرض لأفضل مشاريع التخرج من مختلف الكليات مع تقييم من لجنة أكاديمية.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted"><i class="bi bi-calendar3"></i> 2026-06-05</small>
+                                    <a href="event.html" class="btn btn-sm btn-outline-primary">التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- فعالية 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="assets/img/event5.jpg" class="card-img-top" alt="ورشة برمجة">
+                            <div class="card-body">
+                                <span class="badge badge-culture mb-2">ثقافة</span>
+                                <h5 class="card-title">ورشة البرمجة التفاعلية</h5>
+                                <p class="card-text">ورشة عمل عملية لتعلم أساسيات تطوير الويب باستخدام HTML وCSS وJavaScript.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted"><i class="bi bi-calendar3"></i> 2026-06-10</small>
+                                    <a href="event.html" class="btn btn-sm btn-outline-primary">التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم فريق العمل (أسماء وأرقام IDs المشاركين) -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <h2 class="section-title text-center d-block">فريق المشروع</h2>
+                <div class="row g-4 mt-3 justify-content-center">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="team-member">
+                            <img src="https://ui-avatars.com/api/?name=Jawa+Haitham&background=1a73e8&color=fff&size=100" alt="جوى هيثم عثمان">
+                            <h6>جوى هيثم عثمان</h6>
+                            <p>Jawa_259605<br>C7</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="team-member">
+                            <img src="https://ui-avatars.com/api/?name=Mohammad+Kenan&background=ff6f00&color=fff&size=100" alt="محمد كنان بشار ادريس">
+                            <h6>محمد كنان بشار ادريس</h6>
+                            <p>mohammad_kenan_290536<br>C8</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="team-member">
+                            <img src="https://ui-avatars.com/api/?name=Essam+Sharbaji&background=9c27b0&color=fff&size=100" alt="عصام محمد مأمون عبد الباقي الشربجي">
+                            <h6>عصام الشربجي</h6>
+                            <p>essam_284720<br>C6</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="team-member">
+                            <img src="https://ui-avatars.com/api/?name=Nour+Shami&background=4caf50&color=fff&size=100" alt="نور خالد الشامي">
+                            <h6>نور خالد الشامي</h6>
+                            <p>nour_301104<br>C5</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="team-member">
+                            <img src="https://ui-avatars.com/api/?name=Noor+Wasiti&background=e91e63&color=fff&size=100" alt="نور نبيل الواسطي">
+                            <h6>نور نبيل الواسطي</h6>
+                            <p>noor_301860<br>C6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- التذييل Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="bi bi-calendar-event"></i> دليل الفعاليات</h5>
+                    <p>منصة شاملة لعرض جميع فعاليات الجامعة الافتراضية السورية بمختلف تصنيفاتها.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="events.html">الفعاليات</a></li>
+                        <li><a href="about.html">عن الدليل</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>تواصل معنا</h5>
+                    <p><i class="bi bi-envelope"></i> info@svuonline.org</p>
+                    <p><i class="bi bi-telephone"></i> +963-11-1234567</p>
+                    <div class="mt-2">
+                        <a href="#" class="me-2"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 دليل فعاليات الجامعة الافتراضية السورية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button id="scrollTopBtn" title="العودة للأعلى">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

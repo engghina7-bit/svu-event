@@ -1,0 +1,432 @@
+/* ===========================
+   دليل فعاليات الجامعة الافتراضية
+   ملف التنسيقات الرئيسي
+   =========================== */
+
+/* --- استيراد خط Cairo العربي --- */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+
+/* --- المتغيرات اللونية (الهوية البصرية) --- */
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #ff6f00;
+    --bg-light: #f8f9fa;
+    --bg-dark: #1e1e2f;
+    --text-dark: #212529;
+    --text-light: #ffffff;
+    --accent-culture: #9c27b0;
+    --accent-sports: #4caf50;
+    --accent-music: #e91e63;
+    --accent-family: #ff9800;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.15);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+/* --- إعادة تعيين عامة --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- الجسم العام --- */
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* --- شريط التنقل --- */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), #0d47a1) !important;
+    box-shadow: var(--shadow-md);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--text-light) !important;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition);
+    border-radius: 8px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text-light) !important;
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* --- قسم البطل (Hero) --- */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), #0d47a1);
+    color: var(--text-light);
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    position: relative;
+}
+
+/* --- السلايدر --- */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.6);
+    border-radius: var(--border-radius);
+    padding: 1rem 1.5rem;
+}
+
+/* --- البطاقات (Cards) --- */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    overflow: hidden;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* --- شارات التصنيف --- */
+.badge-culture {
+    background-color: var(--accent-culture) !important;
+}
+
+.badge-sports {
+    background-color: var(--accent-sports) !important;
+}
+
+.badge-music {
+    background-color: var(--accent-music) !important;
+}
+
+.badge-family {
+    background-color: var(--accent-family) !important;
+}
+
+.category-badge {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.category-badge:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* --- قسم التصنيفات --- */
+.categories-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* --- قسم أحدث الفعاليات --- */
+.latest-events {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+/* --- عناوين الأقسام --- */
+.section-title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* --- التذييل --- */
+footer {
+    background: var(--bg-dark);
+    color: rgba(255,255,255,0.8);
+    padding: 40px 0 20px;
+}
+
+footer h5 {
+    color: var(--text-light);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* --- صفحة الفعاليات --- */
+.filter-bar {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+}
+
+.filter-bar .form-control,
+.filter-bar .form-select {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* --- صفحة تفاصيل الفعالية --- */
+.event-detail-header {
+    background: linear-gradient(135deg, var(--primary-color), #0d47a1);
+    color: var(--text-light);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.event-detail-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+.event-info-box {
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+}
+
+/* --- صفحة عن الدليل --- */
+.team-member {
+    text-align: center;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+.team-member:hover {
+    transform: translateY(-3px);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.team-member h6 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.team-member p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* --- صفحة اتصل بنا --- */
+.contact-form {
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.contact-form .form-control {
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    border: 1px solid #e0e0e0;
+    transition: var(--transition);
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.15);
+}
+
+.contact-info-card {
+    background: linear-gradient(135deg, var(--primary-color), #0d47a1);
+    color: var(--text-light);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    height: 100%;
+}
+
+.contact-info-card i {
+    font-size: 1.5rem;
+    margin-left: 0.8rem;
+}
+
+/* --- زر العودة للأعلى --- */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+#scrollTopBtn:hover {
+    background: #0d47a1;
+    transform: scale(1.1);
+}
+
+/* --- التجاوب (Responsive) --- */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .carousel-item img {
+        height: 250px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .contact-info-card {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+    
+    .category-badge {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* --- تأثيرات حركية --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
